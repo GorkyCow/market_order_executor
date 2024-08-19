@@ -6,8 +6,8 @@ import (
     "log"
     "os"
     "strconv"
-	"math"
-	"container/heap"
+    "math"
+    "container/heap"
 )
 
 // Структура для хранения информации о счетах
