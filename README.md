@@ -1,2 +1,20 @@
-# market_order_executor
-Market Order Executor
+# Market Order Executor
+## Python
+Оригинальный код, который я написал и который пытался портировать на го
+
+## Go
+1. **Структуры данных**:
+   - `Order`: Структура для хранения данных о заявке.
+   - `Account`: Структура для хранения данных о счёте.
+
+2. **Основные функции**:
+   - `readOrdersFromCSV`: Читает данные из входного CSV файла.
+   - `writeResultsToCSV`: Записывает результаты в выходной CSV файл.
+   - `processOrders`: Основная логика обработки заявок.
+   - `executeMarketOrder`, `executeLimitOrder`, `executeIOCOrder`, `executeFOKOrder`: Функции для обработки разных типов заявок.
+
+3. **main**: Главная функция, которая принимает аргументы командной строки для входного и выходного файлов, обрабатывает их и сохраняет результаты.
+
+### Запуск:
+```bash
+go run main.go input_orders.csv output_results.csv
